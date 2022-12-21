@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>E-Learning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+      
+<style>
+html {
+  scroll-behavior: smooth;
+  }
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+header{
+    width: 100%;
+    background-image: url('./images/home-hero.jpg');
+    background-color: #EEEEEE;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:cover;
+    opacity: 0.75;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Menubar -->
+<div class="w3-top">
+  <div class="w3-bar w3-2020-brilliant-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-2020-brilliant-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#Home" class="w3-bar-item w3-button w3-padding-large ">Home</a>
+    <a href="#Training Videos" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-gray">Training Videos</a>
+    <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-padding-large">About</a>
+  </div>
+
+  <!-- Menubar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#Training Videos" class="w3-bar-item w3-button w3-padding-large">Training Videos</a>
+    <a href="#About" class="w3-bar-item w3-button w3-padding-large">About</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-pale-blue w3-center" style="padding: 100px 16px">
+  <h1 class="w3-margin " style="color:#000000;font-size: 5vw;font-weight:bold;">E-Learning</h1>
+  <p style="color:#052776;font-size: 2vw;">Learning skills through videos</p>
+</header>
+
+<!-- First Grid -->
+<div id="First Video" class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content" style="max-width:1080px;">
+    <h1>About Training</h1>
+    <p style="font-size: 20px ;">In this page, some traning videos is displayed. You can learn some new technologies in medical area through these informative videos.</p>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content" style="max-width:1080px">
+    <h1>Design of Robot Arm For Arthroplasty</h1>
+    <p style="font-size: 20px ;">This video covered the introduction of robotic assisted arthroplasty surgery 
+        including Total Hip Arthroplasty(THA) and Total Knee Arthroplasty(TKA) and the design of robotic arm for arthroplasty surgeries.   
+    </p>
+    <video width="100%" max-height="auto" controls>
+        <source src="./media/Group_14.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content" style="max-width:1080px">
+      <h1>Design of a Gallstone Surgical Instrument</h1>
+      <p style="font-size: 20px ;">This video covered the introduction of gallstone and some gallstone surgical instrremneets 
+        as well as the modeling of a gallstone surgical instrument in Solidworks. 
+      </p>
+      <video width="100%" max-height="auto" controls>
+          <source src="./media/Group_15.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-2020-brilliant-white w3-padding-8 w3-center w3-opacity">  
+    <p>Copyright 2022 All Rights Reserved.</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
